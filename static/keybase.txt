@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/southclaws
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://southcla.ws
+  * I am southclaws (https://keybase.io/southclaws) on keybase.
+  * I have a public key ASD8F5_joV5Tt_hWirwixHEle6ZIWHerIJMSyCzZbxWs5Ao
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120fc179fe3a15e53b7f8568abc22c471257ba6485877ab209312c82cd96f15ace40a",
+            "host": "keybase.io",
+            "kid": "0120fc179fe3a15e53b7f8568abc22c471257ba6485877ab209312c82cd96f15ace40a",
+            "uid": "f807c113104df7777943a986cb6a3d19",
+            "username": "southclaws"
+        },
+        "service": {
+            "hostname": "southcla.ws",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.18"
+    },
+    "ctime": 1487966168,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1487966128,
+        "hash": "a8ab113d471964890b6494a044f8fb45d406c17c87a5c8f538c27b87438869646f098611ba5ae45536b00f1685182fdcc73311dba613d90c2d2e1071ccb0c1e1",
+        "seqno": 921523
+    },
+    "prev": "0ab044759ddcb65564767f9d1bab9c477866d4151d8d13363e9be3b0be566596",
+    "seqno": 9,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg/Bef46FeU7f4Voq8IsRxJXumSFh3qyCTEsgs2W8VrOQKp3BheWxvYWTFAvV7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwZmMxNzlmZTNhMTVlNTNiN2Y4NTY4YWJjMjJjNDcxMjU3YmE2NDg1ODc3YWIyMDkzMTJjODJjZDk2ZjE1YWNlNDBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwZmMxNzlmZTNhMTVlNTNiN2Y4NTY4YWJjMjJjNDcxMjU3YmE2NDg1ODc3YWIyMDkzMTJjODJjZDk2ZjE1YWNlNDBhIiwidWlkIjoiZjgwN2MxMTMxMDRkZjc3Nzc5NDNhOTg2Y2I2YTNkMTkiLCJ1c2VybmFtZSI6InNvdXRoY2xhd3MifSwic2VydmljZSI6eyJob3N0bmFtZSI6InNvdXRoY2xhLndzIiwicHJvdG9jb2wiOiJodHRwczoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMTgifSwiY3RpbWUiOjE0ODc5NjYxNjgsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTQ4Nzk2NjEyOCwiaGFzaCI6ImE4YWIxMTNkNDcxOTY0ODkwYjY0OTRhMDQ0ZjhmYjQ1ZDQwNmMxN2M4N2E1YzhmNTM4YzI3Yjg3NDM4ODY5NjQ2ZjA5ODYxMWJhNWFlNDU1MzZiMDBmMTY4NTE4MmZkY2M3MzMxMWRiYTYxM2Q5MGMyZDJlMTA3MWNjYjBjMWUxIiwic2Vxbm8iOjkyMTUyM30sInByZXYiOiIwYWIwNDQ3NTlkZGNiNjU1NjQ3NjdmOWQxYmFiOWM0Nzc4NjZkNDE1MWQ4ZDEzMzYzZTliZTNiMGJlNTY2NTk2Iiwic2Vxbm8iOjksInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RA0aXoOY+5OA3X1X0Y1Q5LyEyFjXaFzl7F7BKtB/Ees2z6Y4uWfzMyJ4nKx3rSPaHBdtHwOYHMcgINiA6wzzBwBKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIAPHVz1mYi50zqoprv3RL64Wc1s7mFg5aKZY631+RCoSo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/southclaws
+
+==================================================================
