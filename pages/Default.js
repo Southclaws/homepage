@@ -6,7 +6,7 @@ const DefaultData = {
         "@context": "http://schema.org",
         "@type": "Person",
         email: "mailto:Southclaws@gmail.com",
-        image: "https://southcla.ws/static/Southclaw-icon-vec-final-square-0500.png",
+        image: "https://southcla.ws/static/southclaws-bold-light-0500.png",
         name: "Barnaby Keene",
         birthDate: "1994-12-04",
         gender: "male",

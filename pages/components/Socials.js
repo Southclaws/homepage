@@ -1,32 +1,38 @@
 import * as React from "react";
-import FontAwesome from "react-fontawesome";
+
+import Github from "./icons/Github";
+import Twitter from "./icons/Twitter";
+import Vimeo from "./icons/Vimeo";
+import Behance from "./icons/Behance";
 
 const SocialButton = props => {
     return (
         <label title={props.label}>
             <a className="social-icon" href={props.url} rel="noopener" target="_blank">
-                <FontAwesome name={props.icon} size="4x" />
+                {props.children}
             </a>
         </label>
     );
 };
 
-class About extends React.Component {
-    constructor(props) {
-        super(props);
-    }
+const Socials = () => {
+    return (
+        <div className="aboutSocial">
+            <p>My work and socials:</p>
+            <SocialButton label="https://github.com/Southclaws" url="http://bit.ly/SCGITHUB">
+                <Github />
+            </SocialButton>
+            <SocialButton label="https://twitter.com/Southclaws" url="http://bit.ly/SCTWITTER">
+                <Twitter />
+            </SocialButton>
+            <SocialButton label="https://vimeo.com/Southclaws" url="http://bit.ly/SCVIMEO">
+                <Vimeo />
+            </SocialButton>
+            <SocialButton label="https://behance.net/Southclaws" url="http://bit.ly/SCBEHANCE">
+                <Behance />
+            </SocialButton>
+        </div>
+    );
+};
 
-    render() {
-        return (
-            <div className="aboutSocial">
-                <p>My work and socials:</p>
-                <SocialButton label="https://github.com/Southclaws" url="http://bit.ly/SCGITHUB" icon="github" />
-                <SocialButton label="https://twitter.com/Southclaws" url="http://bit.ly/SCTWITTER" icon="twitter" />
-                <SocialButton label="https://vimeo.com/Southclaws" url="http://bit.ly/SCVIMEO" icon="vimeo" />
-                <SocialButton label="https://behance.net/Southclaws" url="http://bit.ly/SCBEHANCE" icon="behance" />
-            </div>
-        );
-    }
-}
-
-export default About;
+export default Socials;
