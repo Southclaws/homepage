@@ -40,6 +40,13 @@ h3 {
 p {
     font-family: chaparral-pro-display, serif;
     font-weight: 500;
+    font-size: 16px;
+}
+
+p::first-letter {
+    font-weight: 600;
+    font-size: 18px;
+    font-kerning: none;
 }
 
 a {
