@@ -29,6 +29,15 @@ export default () => (
             <link rel="stylesheet" href="https://use.typekit.net/vnc0psu.css" />
 
             <title>Barnaby &quot;Southclaws&quot; Keene - Homepage, Work and Social Links</title>
+            <meta name="description" content='Barnaby "Southclaws" Keene - Homepage, Work and Social Links' />
+            <meta property="og:image" content="https://www.southcla.ws/static/southclaws-bold-light-0100.png" />
+            <meta property="og:site_name" content='Barnaby "Southclaws" Keene' />
+            <meta property="og:type" content="website" />
+            <meta property="og:title" content="Southclaws" />
+            <meta property="og:url" content="https://www.southcla.ws" />
+            <meta property="og:description" content='Barnaby "Southclaws" Keene - Homepage, Work and Social Links' />
+            <meta name="hostname" content="southcla.ws" />
+            <meta name="expected-hostname" content="southcla.ws" />
         </Head>
         <App />
     </div>
