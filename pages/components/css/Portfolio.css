@@ -18,7 +18,7 @@
     float: none;
     object-fit: cover;
     margin: 1em;
-    border-radius: 10px;
+    border-radius: 4px;
 }
 
 .item .description {

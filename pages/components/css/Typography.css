@@ -1,6 +1,9 @@
 /* elements */
 
 header {
+    font-family: pennsylvania, monospace;
+    font-style: italic;
+
     text-align: center;
 }
 

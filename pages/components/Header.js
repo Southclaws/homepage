@@ -18,9 +18,11 @@ export default function Header() {
                     <div>
                         <h2 className={t.strip}>code - video - art</h2>
                     </div>
-                    <h2>
-                        <a href="static/resume/resume.pdf">view résumé</a>
-                    </h2>
+                    <div>
+                        <h2>
+                            view <a href="static/resume/resume.pdf">résumé</a>
+                        </h2>
+                    </div>
                 </div>
             </section>
         </header>
