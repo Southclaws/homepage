@@ -5,20 +5,22 @@ import Twitter from "./icons/Twitter";
 import Vimeo from "./icons/Vimeo";
 import Behance from "./icons/Behance";
 
+import t from "./css/Typography.css";
+import css from "./css/Socials.css";
+
 const SocialButton = props => {
     return (
         <label title={props.label}>
-            <a className="social-icon" href={props.url} rel="noopener" target="_blank">
+            <a className={css.icon} href={props.url} rel="noopener" target="_blank">
                 {props.children}
             </a>
         </label>
     );
 };
 
-const Socials = () => {
+export default function Socials() {
     return (
-        <div className="aboutSocial">
-            <p>My work and socials:</p>
+        <div className={css.socials}>
             <SocialButton label="https://github.com/Southclaws" url="http://bit.ly/SCGITHUB">
                 <Github />
             </SocialButton>
@@ -33,6 +35,4 @@ const Socials = () => {
             </SocialButton>
         </div>
     );
-};
-
-export default Socials;
+}

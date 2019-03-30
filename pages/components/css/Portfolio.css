@@ -1,0 +1,37 @@
+.items {
+    text-align: center;
+}
+
+.item {
+    margin-top: 24px;
+}
+
+.item:hover {
+    background-color: hsl(202, 17%, 92%);
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    max-width: 140px;
+    max-height: 140px;
+    float: none;
+    object-fit: cover;
+    margin: 1em;
+    border-radius: 10px;
+}
+
+.item .description {
+    vertical-align: top;
+    display: inline-block;
+    width: 45%;
+    margin-top: 20px;
+}
+
+.item p {
+    text-align: left;
+}
+
+.item a {
+    color: black;
+}

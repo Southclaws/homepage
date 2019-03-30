@@ -1,18 +1,31 @@
 import * as React from "react";
 
-import PortfolioItem from "./PortfolioItem";
+import t from "./css/Typography.css";
+import css from "./css/Portfolio.css";
 
-class Portfolio extends React.Component {
-    render() {
-        return (
-            <section className="mainContent">
-                <h2>Recent work</h2>
-                {this.props.items.map((value, index, array) => {
-                    return <PortfolioItem key={index} data={value} />;
-                })}
-            </section>
-        );
-    }
+export default function Portfolio(props) {
+    return (
+        <section className={css.items}>
+            {props.items.map((value, index) => {
+                return <Item key={index} data={value} />;
+            })}
+        </section>
+    );
 }
 
-export default Portfolio;
+function Item(props) {
+    return (
+        <div className={css.item}>
+            <h3 className={t.strip}>{props.data.name}</h3>
+            <a href={props.data.url} target="_blank" rel="nofollow">
+                <div>
+                    <img src={props.data.image} />
+                    <div className={css.description}>
+                        <p>{props.data.about}</p>
+                    </div>
+                </div>
+                {/* <JsonLD data={props.data} /> */}
+            </a>
+        </div>
+    );
+}

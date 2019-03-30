@@ -3,9 +3,13 @@ import * as React from "react";
 import JsonLD from "./components/JsonLD";
 import Header from "./components/Header";
 import About from "./components/About";
+import Socials from "./components/Socials";
 import Portfolio from "./components/Portfolio";
 import Footer from "./components/Footer";
 import DefaultData from "./Default";
+
+import "./App.css";
+import "./components/css/Layout.css";
 
 class App extends React.Component {
     constructor(props) {
@@ -49,6 +53,8 @@ class App extends React.Component {
                 <Header image={this.state.ld.image} />
                 <hr />
                 <About description={this.state.ld.description} />
+                <hr />
+                <Socials />
                 <hr />
                 <Portfolio items={this.state.portfolio} />
                 <hr />

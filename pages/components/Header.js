@@ -1,24 +1,28 @@
 import * as React from "react";
 
-class Header extends React.Component {
-    render() {
-        return (
-            <header>
-                <section className="profileHeader">
-                    <div className="profileLogo">
-                        <img src={this.props.image} />
-                    </div>
-                    <div className="profileTitle">
-                        <h1>Southclaws</h1>
-                        <h3>Code - Video - Art</h3>
-                        <h4>
-                            <a href="static/resume/resume.pdf">view résumé</a>
-                        </h4>
-                    </div>
-                </section>
-            </header>
-        );
-    }
-}
+import { Bold } from "./icons/Southclaws";
 
-export default Header;
+import t from "./css/Typography.css";
+
+export default function Header() {
+    return (
+        <header>
+            <section>
+                <div>
+                    <Bold width={100} height={100} />
+                </div>
+                <div>
+                    <div>
+                        <h1 className={t.strip}>southclaws</h1>
+                    </div>
+                    <div>
+                        <h2 className={t.strip}>code - video - art</h2>
+                    </div>
+                    <h2>
+                        <a href="static/resume/resume.pdf">view résumé</a>
+                    </h2>
+                </div>
+            </section>
+        </header>
+    );
+}

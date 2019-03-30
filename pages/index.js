@@ -26,8 +26,7 @@ export default () => (
             <link rel="mask-icon" href="/static/safari-pinned-tab.svg" color="#5bbad5" />
             <link rel="shortcut icon" href="/static/favicon.ico" />
 
-            <link type="text/css" rel="stylesheet" href="/static/index.css" />
-            <link href="https://fonts.googleapis.com/css?family=Changa+One" rel="stylesheet" />
+            <link rel="stylesheet" href="https://use.typekit.net/vnc0psu.css" />
 
             <title>Barnaby &quot;Southclaws&quot; Keene - Homepage, Work and Social Links</title>
         </Head>

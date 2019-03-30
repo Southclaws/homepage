@@ -1,0 +1,12 @@
+main {
+    margin: 0em 4em 0em 4em;
+}
+
+hr {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    height: 1px;
+    width: 80%;
+    border-style: none;
+    background-color: rgba(0, 0, 0, 0.2);
+}
