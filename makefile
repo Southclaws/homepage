@@ -8,7 +8,9 @@ build:
 		.
 
 push:
-	docker push southclaws/homepage:$(VERSION) 
+	docker push southclaws/homepage:$(VERSION)
+	docker tag southclaws/homepage:$(VERSION) southclaws/homepage:latest
+	docker push southclaws/homepage:latest
 
 run:
 	-docker kill homepage
