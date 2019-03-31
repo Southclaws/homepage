@@ -8,7 +8,7 @@ import Socials from "./components/Socials";
 import Portfolio from "./components/Portfolio";
 import Footer from "./components/Footer";
 
-import { ld, portfolio } from "./data";
+import { ld, portfolio } from "./data.js";
 import "./index.css";
 
 const USER = "Southclaws";
