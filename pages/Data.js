@@ -14,9 +14,10 @@ export const ld = {
         "http://www.twitter.com/Southclaws"
     ],
     description: [
-        "Hey I'm Barnaby Keene, also known as Southclaws on the net. I'm a software engineer based in Nottingham. I'm a Golang and Kubernetes fan with a big interest in cloud technology and big data analysis. Check my GitHub out for examples of API servers, React apps, developer tools and more!",
-        "Outside of tech, I am a hobbyist filmmaker and artist. When not deep into an editing session on Premiere Pro or After Effects I'm out filming the world, working on 3D art or doing anything else to excersise my creative muscles.",
-        "Currently residing in the city of Nottingham studying Computer Science and building things. I listen to anything from jazz to dubstep; grunge to orchestral. And I share a birthday with the original PlayStation!"
+        "Hi, I'm Barnaby Keene, also known as Southclaws on the internet.",
+        "I'm a software engineer based in London. Experienced in a variety of languages, web technologies and infrastructure tooling. See my GitHub page for more.",
+        "Aside from tech, I am a hobbyist filmmaker and artist. When not deep into an editing session on Premiere Pro or After Effects I'm out filming or photographing the world.",
+        "Currently residing in the city of London, working as a Golang engineer and building things in my spare time."
     ]
 };
 
