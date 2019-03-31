@@ -1,9 +1,15 @@
 import React from "react";
-import ReactDOM from "react-dom";
-
 import Head from "next/head";
 
-import App from "./App";
+import JsonLD from "./components/JsonLD";
+import Header from "./components/Header";
+import About from "./components/About";
+import Socials from "./components/Socials";
+import Portfolio from "./components/Portfolio";
+import Footer from "./components/Footer";
+
+import { ld, portfolio } from "./data";
+import "./index.css";
 
 export default () => (
     <div>
@@ -39,6 +45,17 @@ export default () => (
             <meta name="hostname" content="southcla.ws" />
             <meta name="expected-hostname" content="southcla.ws" />
         </Head>
-        <App />
+        <div>
+            <JsonLD data={ld} />
+            <Header image={ld.image} />
+            <hr />
+            <About description={ld.description} />
+            <hr />
+            <Socials />
+            <hr />
+            <Portfolio items={portfolio} />
+            <hr />
+            <Footer />
+        </div>
     </div>
 );
