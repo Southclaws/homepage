@@ -42,6 +42,9 @@ export default () => (
             <meta property="og:title" content="Southclaws" />
             <meta property="og:url" content="https://www.southcla.ws" />
             <meta property="og:description" content='Barnaby "Southclaws" Keene - Homepage, Work and Social Links' />
+            <meta name="twitter:card" content="summary" />
+            <meta name="twitter:site" content="@Southclaws" />
+            <meta name="twitter:creator" content="@Southclaws" />
             <meta name="hostname" content="southcla.ws" />
             <meta name="expected-hostname" content="southcla.ws" />
         </Head>
