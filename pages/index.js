@@ -52,9 +52,9 @@ export default () => (
             <meta name="twitter:creator" content="@Southclaws" />
             <meta name="hostname" content="southcla.ws" />
             <meta name="expected-hostname" content="southcla.ws" />
+            <JsonLD data={ld} />
         </Head>
         <div>
-            <JsonLD data={ld} />
             <Header image={ld.image} />
             <hr />
             <About description={ld.description} />
