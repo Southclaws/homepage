@@ -1,5 +1,7 @@
 import * as React from "react";
 
+import JsonLD from "./JsonLD";
+
 import t from "./css/Typography.css";
 import css from "./css/Portfolio.css";
 
@@ -13,7 +15,7 @@ export default function Portfolio(props) {
     );
 }
 
-function Item(props) {
+const Item = props => {
     return (
         <div className={css.item}>
             <h3 className={t.strip}>{props.data.name}</h3>
@@ -24,8 +26,8 @@ function Item(props) {
                         <p>{props.data.about}</p>
                     </div>
                 </div>
-                {/* <JsonLD data={props.data} /> */}
+                <JsonLD data={props.data} />
             </a>
         </div>
     );
-}
+};

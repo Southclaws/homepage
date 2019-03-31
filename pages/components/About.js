@@ -1,7 +1,5 @@
 import * as React from "react";
 
-import Socials from "./Socials";
-
 export default function About(props) {
     return (
         <main>

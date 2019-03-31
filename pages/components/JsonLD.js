@@ -1,14 +1,12 @@
 import * as React from "react";
 
-const JsonLd = data => {
+export default function JsonLd(props) {
     return (
         <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{
-                __html: JSON.stringify(data.data, null, 4)
+                __html: JSON.stringify(props.data, null, 4)
             }}
         />
     );
-};
-
-export default JsonLd;
+}

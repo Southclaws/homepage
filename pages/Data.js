@@ -1,6 +1,3 @@
-// backup version in case the GitHub API goes down and the latest data
-// cannot be retrieved.
-
 export const ld = {
     "@context": "http://schema.org",
     "@type": "Person",
