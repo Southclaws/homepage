@@ -20,7 +20,7 @@ export default function Header() {
                     </div>
                     <div>
                         <h2>
-                            view <a href="static/resume/resume.pdf">résumé</a>
+                            <a href="https://blog.southcla.ws">blog</a> — <a href="static/resume/resume.pdf">résumé</a>
                         </h2>
                     </div>
                 </div>
