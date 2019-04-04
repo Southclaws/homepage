@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <footer>
             <p>
-                2018 &copy; Barnaby "Southclaws" Keene <span>All Rights Reserved</span>
+                {new Date().getFullYear()} &copy; Barnaby "Southclaws" Keene <span>All Rights Reserved</span>
             </p>
         </footer>
     );
