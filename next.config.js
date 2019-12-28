@@ -1,4 +1,4 @@
-const withCSS = require("@zeit/next-css");
-module.exports = withCSS({
-    cssModules: true
+const withMDX = require('@next/mdx')();
+module.exports = withMDX({
+  pageExtensions: ['js', 'jsx', 'md', 'mdx']
 });
