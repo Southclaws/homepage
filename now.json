@@ -3,6 +3,18 @@
     {
       "source": "southcla.ws",
       "destination": "www.southcla.ws"
+    },
+    {
+      "source": "southclaws.com",
+      "destination": "www.southcla.ws"
+    },
+    {
+      "source": "cla.ws",
+      "destination": "www.southcla.ws"
+    },
+    {
+      "source": "south.cla.ws",
+      "destination": "www.southcla.ws"
     }
   ]
 }
