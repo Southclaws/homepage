@@ -19,6 +19,10 @@
     {
       "source": "southclaw.net",
       "destination": "www.southcla.ws"
+    },
+    {
+      "source": "blog.southcla.ws",
+      "destination": "www.southcla.ws/blog"
     }
   ]
 }
