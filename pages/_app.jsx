@@ -30,9 +30,9 @@ const SEO = {
         alt: 'Southclaws Logo (Light)'
       },
       {
-        url: '/static/2019.jpg',
-        width: 500,
-        height: 500,
+        url: '/static/2019.webp',
+        width: 100,
+        height: 100,
         alt: 'Photograph of Barnaby "Southclaws" Keene (2019)'
       }
     ]
@@ -46,12 +46,14 @@ const SEO = {
 
 const Header = () => (
   <header>
-    <img
-      src="/static/2019.jpg"
-      alt="A photograph of Barnaby Keene (Southclaws) standing before a mountain."
-      width={100}
-      height={100}
-    />
+    <picture>
+      <source srcset="/static/2019.webp" />
+      <img
+        src="/static/2019.jpg"
+        alt="A photograph of Barnaby Keene (Southclaws) standing before a mountain."
+      />
+    </picture>
+
     <br />
     <Bold width={64} height={64} />
     <br />
@@ -85,7 +87,7 @@ const Footer = () => (
       footer {
         font-size: smaller;
         text-align: center;
-        color: rgba(181, 178, 178, 1);
+        color: hsl(0, 0%, 50%);
       }
     `}</style>
   </footer>
