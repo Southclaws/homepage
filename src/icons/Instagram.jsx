@@ -4,14 +4,11 @@ export default (props) => (
   <svg
     aria-hidden="true"
     focusable="false"
-    data-prefix="fab"
     data-icon="instagram"
     className="icon-instagram"
     role="img"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 448 512"
-    width={448}
-    height={512}
     {...props}
   >
     <path

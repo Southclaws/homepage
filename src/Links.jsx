@@ -9,16 +9,13 @@ import Behance from '../src/icons/Behance';
 
 export const Socials = () => (
   <span>
-    <IconLink url="mailto:south@cla.ws">
+    <IconLink url="mailto:south@cla.ws" label="Send mail to Barnaby">
       <Mail width="2em" height="1em" />
     </IconLink>
-    <IconLink label="https://twitter.com/Southclaws" url="http://j.mp/SCINSTA">
+    <IconLink label="Barnaby's Instagram profile" url="http://j.mp/SCINSTA">
       <Instagram width="2em" height="1em" />
     </IconLink>
-    <IconLink
-      label="https://twitter.com/Southclaws"
-      url="http://bit.ly/SCTWITTER"
-    >
+    <IconLink label="Barnaby's Twitter profile" url="http://bit.ly/SCTWITTER">
       <Twitter width="2em" height="1em" />
     </IconLink>
 
@@ -37,16 +34,19 @@ export const Socials = () => (
 export const Links = () => (
   <div>
     <IconLink
-      label="https://behance.net/Southclaws"
+      label="Barnaby's design and branding work on Behance"
       url="http://bit.ly/SCBEHANCE"
     >
       <Behance height="4em" width="3em" />
     </IconLink>
-    <IconLink label="https://vimeo.com/Southclaws" url="http://bit.ly/SCVIMEO">
+    <IconLink
+      label="Barnaby's video and motion graphics work on Vimeo"
+      url="http://bit.ly/SCVIMEO"
+    >
       <Vimeo height="4em" width="3em" />
     </IconLink>
     <IconLink
-      label="https://github.com/Southclaws"
+      label="Barnaby's software and web development work on GitHub"
       url="http://bit.ly/SCGITHUB"
     >
       <Github height="4em" width="3em" />
@@ -64,8 +64,8 @@ export const Links = () => (
 );
 
 export const IconLink = ({ label, url, children }) => (
-  <label title={label}>
-    <a href={url} rel="noopener" target="_blank">
+  <label title={label} tabIndex={0}>
+    <a href={url} rel="noopener" target="_blank" aria-label={label}>
       {children}
     </a>
 

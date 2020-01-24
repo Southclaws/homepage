@@ -46,7 +46,7 @@ const SEO = {
 
 const Header = () => (
   <header>
-    <picture>
+    <picture tabIndex={0}>
       <source srcset="/static/2019.webp" />
       <img
         src="/static/2019.jpg"
@@ -55,7 +55,7 @@ const Header = () => (
     </picture>
 
     <br />
-    <Bold width={64} height={64} />
+    <Bold width={64} height={64} tabIndex={0} />
     <br />
     <Socials />
 
@@ -87,7 +87,7 @@ const Footer = () => (
       footer {
         font-size: smaller;
         text-align: center;
-        color: hsl(0, 0%, 50%);
+        color: hsl(0, 0%, 20%);
       }
     `}</style>
   </footer>

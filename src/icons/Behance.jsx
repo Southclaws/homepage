@@ -5,7 +5,6 @@ export default (props) => (
     xmlns="http://www.w3.org/2000/svg"
     aria-hidden="true"
     focusable="false"
-    data-prefix="fab"
     data-icon="behance"
     role="img"
     viewBox="0 0 576 576"
