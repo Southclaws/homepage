@@ -11,7 +11,10 @@ export const Socials = () => (
     <IconLink label="https://twitter.com/Southclaws" url="http://j.mp/SCINSTA">
       <Instagram width={24} height={24} />
     </IconLink>
-    <IconLink label="https://twitter.com/Southclaws" url="http://bit.ly/SCTWITTER">
+    <IconLink
+      label="https://twitter.com/Southclaws"
+      url="http://bit.ly/SCTWITTER"
+    >
       <Twitter width={24} height={24} />
     </IconLink>
   </span>
@@ -19,13 +22,19 @@ export const Socials = () => (
 
 export const Links = () => (
   <div>
-    <IconLink label="https://behance.net/Southclaws" url="http://bit.ly/SCBEHANCE">
+    <IconLink
+      label="https://behance.net/Southclaws"
+      url="http://bit.ly/SCBEHANCE"
+    >
       <Behance />
     </IconLink>
     <IconLink label="https://vimeo.com/Southclaws" url="http://bit.ly/SCVIMEO">
       <Vimeo />
     </IconLink>
-    <IconLink label="https://github.com/Southclaws" url="http://bit.ly/SCGITHUB">
+    <IconLink
+      label="https://github.com/Southclaws"
+      url="http://bit.ly/SCGITHUB"
+    >
       <Github />
     </IconLink>
 

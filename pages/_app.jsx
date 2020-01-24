@@ -10,7 +10,8 @@ const YEAR = new Date().getFullYear();
 const SEO = {
   title: 'Homepage, Work and Social Links',
   titleTemplate: '%s | Southclaws',
-  description: 'Homepage, work and social links for Southclaws, aka Barnaby Keene.',
+  description:
+    'Homepage, work and social links for Southclaws, aka Barnaby Keene.',
   canonical: 'https://www.southcla.ws',
   openGraph: {
     type: 'website',
@@ -97,20 +98,44 @@ export default ({ Component, pageProps }) => (
 
     <Head>
       <meta charSet="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
       <meta name="theme-color" content="#ff3200" />
       <meta name="msapplication-TileColor" content="#ff3200" />
-      <meta name="msapplication-TileImage" content="/static/mstile-144x144.png" />
+      <meta
+        name="msapplication-TileImage"
+        content="/static/mstile-144x144.png"
+      />
       <meta name="msapplication-config" content="/static/browserconfig.xml" />
       <meta name="theme-color" content="#ff3200" />
 
       <link rel="manifest" href="/static/manifest.json" />
       <link rel="shortcut icon" href="/static/favicon.ico" />
-      <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png" />
-      <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png" />
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/static/apple-touch-icon.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/static/favicon-32x32.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/static/favicon-16x16.png"
+      />
       <link rel="manifest" href="/static/site.webmanifest" />
-      <link rel="mask-icon" href="/static/safari-pinned-tab.svg" color="#5bbad5" />
+      <link
+        rel="mask-icon"
+        href="/static/safari-pinned-tab.svg"
+        color="#5bbad5"
+      />
       <link rel="shortcut icon" href="/static/favicon.ico" />
 
       <link rel="stylesheet" href="/fonts/inter/inter.css" />

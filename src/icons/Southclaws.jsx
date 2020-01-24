@@ -1,9 +1,19 @@
 import React from 'react';
 
 export const Bold = (props) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width={500} height={500} {...props}>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 500 500"
+    width={500}
+    height={500}
+    {...props}
+  >
     <defs>
-      <style dangerouslySetInnerHTML={{ __html: '.cls-1{fill:#333;}.cls-2{fill:#ff3200;}' }} />
+      <style
+        dangerouslySetInnerHTML={{
+          __html: '.cls-1{fill:#333;}.cls-2{fill:#ff3200;}'
+        }}
+      />
     </defs>
     <title>southclaws-bold-linework-svg</title>
     <g id="bold-linework">
@@ -24,10 +34,18 @@ export const Bold = (props) => (
 );
 
 export const Minimal = (props) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width={500} height={500} {...props}>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 500 500"
+    width={500}
+    height={500}
+    {...props}
+  >
     <defs>
       <style
-        dangerouslySetInnerHTML={{ __html: '.cls-1{fill:none;stroke:#333;stroke-width:4px;}' }}
+        dangerouslySetInnerHTML={{
+          __html: '.cls-1{fill:none;stroke:#333;stroke-width:4px;}'
+        }}
       />
     </defs>
     <title>southclaws-minimal-linework-svg</title>
@@ -43,10 +61,18 @@ export const Minimal = (props) => (
 );
 
 export const Outline = (props) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width={500} height={500} {...props}>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 500 500"
+    width={500}
+    height={500}
+    {...props}
+  >
     <defs>
       <style
-        dangerouslySetInnerHTML={{ __html: '.cls-1{fill:none;stroke:#333;stroke-width:4px;}' }}
+        dangerouslySetInnerHTML={{
+          __html: '.cls-1{fill:none;stroke:#333;stroke-width:4px;}'
+        }}
       />
     </defs>
     <title>southclaws-outline-linework-svg</title>
@@ -71,9 +97,19 @@ export const Outline = (props) => (
 );
 
 export const Solid = (props) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width={500} height={500} {...props}>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 500 500"
+    width={500}
+    height={500}
+    {...props}
+  >
     <defs>
-      <style dangerouslySetInnerHTML={{ __html: '.cls-1{fill:#333;}.cls-2{fill:#ff3200;}' }} />
+      <style
+        dangerouslySetInnerHTML={{
+          __html: '.cls-1{fill:#333;}.cls-2{fill:#ff3200;}'
+        }}
+      />
     </defs>
     <title>southclaws-solid-linework-svg</title>
     <g id="solid-linework">
