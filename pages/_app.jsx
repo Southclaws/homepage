@@ -45,9 +45,14 @@ const SEO = {
 
 const Header = () => (
   <header>
-    <Bold width={100} height={100} />
+    <img
+      src="/static/2019.jpg"
+      alt="A photograph of Barnaby Keene (Southclaws) standing before a mountain."
+      width={100}
+      height={100}
+    />
     <br />
-    <h1>southclaws</h1>
+    <Bold width={64} height={64} />
     <br />
     <Socials />
 
@@ -55,6 +60,10 @@ const Header = () => (
       header {
         font-family: Inter, sans-serif;
         text-align: center;
+      }
+      img {
+        border-radius: 50px;
+        margin-top: 1em;
       }
       h1 {
         margin: 0em 0em 0.5em 0em;
@@ -150,8 +159,8 @@ export default ({ Component, pageProps }) => (
       }
 
       hr {
-        margin-top: 2em;
-        margin-bottom: 2em;
+        margin-top: 1em;
+        margin-bottom: 1em;
         height: 1px;
         width: 80%;
         border-style: none;
