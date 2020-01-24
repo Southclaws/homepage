@@ -40,27 +40,24 @@ export const Links = () => (
       label="https://behance.net/Southclaws"
       url="http://bit.ly/SCBEHANCE"
     >
-      <Behance />
+      <Behance height="4em" width="3em" />
     </IconLink>
     <IconLink label="https://vimeo.com/Southclaws" url="http://bit.ly/SCVIMEO">
-      <Vimeo />
+      <Vimeo height="4em" width="3em" />
     </IconLink>
     <IconLink
       label="https://github.com/Southclaws"
       url="http://bit.ly/SCGITHUB"
     >
-      <Github />
+      <Github height="4em" width="3em" />
     </IconLink>
 
     <style jsx>{`
       div {
-        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
         margin-top: 0px;
         margin-left: 0px;
-
-        clear: both;
-        left: 0%;
-        right: 0%;
       }
     `}</style>
   </div>

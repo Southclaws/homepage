@@ -83,8 +83,7 @@ const Footer = () => (
 
     <style jsx>{`
       footer {
-        font-size: small;
-        font-weight: 400;
+        font-size: smaller;
         text-align: center;
         color: rgba(181, 178, 178, 1);
       }
@@ -138,7 +137,6 @@ export default ({ Component, pageProps }) => (
       />
       <link rel="shortcut icon" href="/static/favicon.ico" />
 
-      <link rel="stylesheet" href="/fonts/inter/inter.css" />
       <link rel="stylesheet" href="https://use.typekit.net/vnc0psu.css" />
     </Head>
 
@@ -157,21 +155,26 @@ export default ({ Component, pageProps }) => (
     <style jsx global>{`
       html,
       #__next {
+        // CSS reset.
         margin: 0 0 0 0;
         padding: 0 0 0 0;
-        width: 100%;
       }
       body {
+        // Keeps the body centered, regardless of size.
         margin: 0 auto 0 auto;
+
+        // Keeps the body flush inside the root.
         padding: 0 0 0 0;
-        max-width: 560px;
-        background-color: #dae1e5;
+
+        // Root scaling factor
+        font-size: 12pt;
+        max-width: 32em;
 
         font-family: Rooney, serif;
-        font-size: 125%;
+        background-color: #dae1e5;
       }
       main {
-        margin: 0em 4em 0em 4em;
+        margin: 0em 2em 0em 2em;
       }
 
       h3 {
@@ -187,7 +190,6 @@ export default ({ Component, pageProps }) => (
         margin-top: 1em;
         margin-bottom: 1em;
         height: 1px;
-        width: 80%;
         border-style: none;
         background-color: rgba(0, 0, 0, 0.1);
       }

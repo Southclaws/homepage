@@ -2,15 +2,14 @@ import React from 'react';
 
 export default (props) => (
   <svg
+    xmlns="http://www.w3.org/2000/svg"
     aria-hidden="true"
     focusable="false"
     data-prefix="fab"
-    data-icon="github"
+    data-icon="behance"
     role="img"
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 496 512"
-    width={64}
-    height={64}
+    viewBox="0 0 512 512"
     {...props}
   >
     <path

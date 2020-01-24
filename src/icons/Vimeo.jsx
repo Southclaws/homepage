@@ -2,16 +2,13 @@ import React from 'react';
 
 export default (props) => (
   <svg
+    xmlns="http://www.w3.org/2000/svg"
     aria-hidden="true"
     focusable="false"
     data-prefix="fab"
-    data-icon="vimeo"
-    className="svg-inline--fa fa-vimeo fa-w-14"
+    data-icon="behance"
     role="img"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 448 512"
-    width={64}
-    height={64}
+    viewBox="0 0 512 512"
     {...props}
   >
     <path
