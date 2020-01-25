@@ -69,7 +69,8 @@ export const IconLink = ({ label, url, children }) => (
       href={url}
       rel="noopener noreferrer"
       target="_blank"
-      label={label}
+      aria-label={label}
+      title={label}
       tabIndex={0}
     >
       {children}
