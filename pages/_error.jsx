@@ -21,6 +21,7 @@ const Error = ({ code }) => (
   <main>{code === 404 ? <NotFound /> : <Generic code={code} />}</main>
 );
 
+// eslint-disable-next-line fp/no-mutation
 Error.getInitialProps = ({ res, err }) => ({
   code: res?.statusCode || err?.statusCode || 404
 });

@@ -46,8 +46,13 @@
     },
     "extends": [
       "airbnb",
-      "prettier",
-      "plugin:jsx-a11y/strict"
+      "airbnb/hooks",
+      "plugin:prettier/recommended",
+      "plugin:you-dont-need-lodash-underscore/compatible",
+      "plugin:fp/recommended",
+      "plugin:jsx-a11y/strict",
+      "prettier/react",
+      "prettier"
     ],
     "globals": {
       "Atomics": "readonly",
@@ -61,9 +66,16 @@
       "sourceType": "module"
     },
     "plugins": [
-      "react",
+      "fp",
+      "import",
+      "jsx-a11y",
+      "jsx-a11y",
       "prettier",
-      "jsx-a11y"
+      "prettier",
+      "react-hooks",
+      "react",
+      "react",
+      "you-dont-need-lodash-underscore"
     ],
     "rules": {
       "prettier/prettier": "error",
@@ -72,7 +84,8 @@
       "jsx-a11y/anchor-is-valid": "off",
       "react/jsx-one-expression-per-line": "off",
       "react/jsx-props-no-spreading": "off",
-      "react/jsx-closing-tag-location": "off"
+      "react/jsx-closing-tag-location": "off",
+      "fp/no-class": "off"
     }
   },
   "prettier": {
