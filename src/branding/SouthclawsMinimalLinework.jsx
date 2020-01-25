@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 
 function SouthclawsMinimalLinework(props) {
   return (
     <svg viewBox="0 0 500 500" width="1em" height="1em" {...props}>
       <defs>
-        <style>{".cls-1{fill:none;stroke:#333;stroke-width:4px;}"}</style>
+        <style>{'.cls-1{fill:none;stroke:#333;stroke-width:4px;}'}</style>
       </defs>
-      <title>{"southclaws-minimal-linework"}</title>
+      <title>{'southclaws-minimal-linework'}</title>
       <g id="minimal-linework">
         <path
           id="outer"

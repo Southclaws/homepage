@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function SouthclawsMinimalColoured(props) {
   return (
@@ -6,11 +6,11 @@ function SouthclawsMinimalColoured(props) {
       <defs>
         <style>
           {
-            ".cls-1{fill:#ff3200;}.cls-2{fill:none;stroke:#dae1e5;stroke-width:4px;}"
+            '.cls-1{fill:#ff3200;}.cls-2{fill:none;stroke:#dae1e5;stroke-width:4px;}'
           }
         </style>
       </defs>
-      <title>{"southclaws-minimal-coloured"}</title>
+      <title>{'southclaws-minimal-coloured'}</title>
       <g id="minimal-coloured">
         <rect id="bg" className="cls-1" width={500} height={500} />
         <path

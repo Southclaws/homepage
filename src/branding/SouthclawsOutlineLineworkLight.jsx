@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 
 function SouthclawsOutlineLineworkLight(props) {
   return (
     <svg viewBox="0 0 500 500" width="1em" height="1em" {...props}>
       <defs>
-        <style>{".cls-1{fill:none;stroke:#dae1e5;stroke-width:4px;}"}</style>
+        <style>{'.cls-1{fill:none;stroke:#dae1e5;stroke-width:4px;}'}</style>
       </defs>
-      <title>{"southclaws-outline-linework-light"}</title>
+      <title>{'southclaws-outline-linework-light'}</title>
       <g id="outline-linework-light">
         <path
           id="outer"

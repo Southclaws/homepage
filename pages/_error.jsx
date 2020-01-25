@@ -1,7 +1,9 @@
+import React from 'react';
+
 const NotFound = () => (
   <>
     <h1>You seem lost...</h1>
-    <p>The page you were looking for isn't here...</p>
+    <p>The page you were looking for isn&apos;t here...</p>
     <p>
       <a href="/">Click here</a> to return to the home page.
     </p>
@@ -20,7 +22,7 @@ const Error = ({ code }) => (
 );
 
 Error.getInitialProps = ({ res, err }) => ({
-  code: res ? res.statusCode : err ? err.statusCode : 404
+  code: res?.statusCode || err?.statusCode || 404
 });
 
 export default Error;

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function SouthclawsExtraRainbowDark(props) {
   return (
@@ -6,7 +6,7 @@ function SouthclawsExtraRainbowDark(props) {
       <defs>
         <style>
           {
-            ".cls-1{fill:none;}.cls-2{fill:#750787;}.cls-3{fill:#004dff;}.cls-4{fill:#008026;}.cls-5{fill:#ffed00;}.cls-6{fill:#ff8c00;}.cls-7{fill:#e40303;}.cls-8{fill:#333;}.cls-9{fill:url(#Rainbow);}.cls-10{fill:#dae1e5;}"
+            '.cls-1{fill:none;}.cls-2{fill:#750787;}.cls-3{fill:#004dff;}.cls-4{fill:#008026;}.cls-5{fill:#ffed00;}.cls-6{fill:#ff8c00;}.cls-7{fill:#e40303;}.cls-8{fill:#333;}.cls-9{fill:url(#Rainbow);}.cls-10{fill:#dae1e5;}'
           }
         </style>
         <pattern
@@ -27,7 +27,7 @@ function SouthclawsExtraRainbowDark(props) {
           <rect className="cls-7" width={495.73} height={51.04} />
         </pattern>
       </defs>
-      <title>{"southclaws-extra-rainbow-dark"}</title>
+      <title>{'southclaws-extra-rainbow-dark'}</title>
       <g id="extra-rainbow-dark">
         <rect id="bg" className="cls-8" width={500} height={500} />
         <path

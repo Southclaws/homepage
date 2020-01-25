@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function SouthclawsBoldColoured(props) {
   return (
@@ -10,9 +10,9 @@ function SouthclawsBoldColoured(props) {
       {...props}
     >
       <defs>
-        <style>{".cls-1{fill:#ff3200;}.cls-2{fill:#dae1e5;}"}</style>
+        <style>{'.cls-1{fill:#ff3200;}.cls-2{fill:#dae1e5;}'}</style>
       </defs>
-      <title>{"southclaws-bold-coloured"}</title>
+      <title>{'southclaws-bold-coloured'}</title>
       <rect id="bg" className="cls-1" width={500} height={500} />
       <path
         id="outline"

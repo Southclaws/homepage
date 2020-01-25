@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function SouthclawsOutlineColoured(props) {
   return (
@@ -6,11 +6,11 @@ function SouthclawsOutlineColoured(props) {
       <defs>
         <style>
           {
-            ".cls-1{fill:#ff3200;}.cls-2{fill:none;stroke:#dae1e5;stroke-miterlimit:10;stroke-width:4px;}"
+            '.cls-1{fill:#ff3200;}.cls-2{fill:none;stroke:#dae1e5;stroke-miterlimit:10;stroke-width:4px;}'
           }
         </style>
       </defs>
-      <title>{"southclaws-outline-coloured"}</title>
+      <title>{'southclaws-outline-coloured'}</title>
       <g id="outline-coloured">
         <rect id="bg" className="cls-1" width={500} height={500} />
         <path

@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 
 function SouthclawsSolidLinework(props) {
   return (
     <svg viewBox="0 0 500 500" width="1em" height="1em" {...props}>
       <defs>
-        <style>{".cls-1{fill:#333;}.cls-2{fill:#ff3200;}"}</style>
+        <style>{'.cls-1{fill:#333;}.cls-2{fill:#ff3200;}'}</style>
       </defs>
-      <title>{"southclaws-solid-linework"}</title>
+      <title>{'southclaws-solid-linework'}</title>
       <g id="solid-linework">
         <path
           id="outer"

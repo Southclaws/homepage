@@ -46,8 +46,8 @@ const SEO = {
 
 const Header = () => (
   <header>
-    <picture tabIndex={0}>
-      <source srcset="/static/2019.webp" />
+    <picture>
+      <source srcSet="/static/2019.webp" />
       <img
         src="/static/2019.jpg"
         alt="A photograph of Barnaby Keene (Southclaws) standing before a mountain."
@@ -81,7 +81,9 @@ const Header = () => (
 
 const Footer = () => (
   <footer>
-    <p>{YEAR} &copy; Barnaby "Southclaws" Keene All Rights Reserved</p>
+    <p>
+      {YEAR} &copy; Barnaby &quot;Southclaws&quot; Keene All Rights Reserved
+    </p>
 
     <style jsx>{`
       footer {

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function SouthclawsExtraRainbowTrans(props) {
   return (
@@ -6,7 +6,7 @@ function SouthclawsExtraRainbowTrans(props) {
       <defs>
         <style>
           {
-            ".cls-1{fill:none;}.cls-2{fill:#750787;}.cls-3{fill:#004dff;}.cls-4{fill:#008026;}.cls-5{fill:#ffed00;}.cls-6{fill:#ff8c00;}.cls-7{fill:#e40303;}.cls-8{fill:url(#Rainbow);}.cls-9{fill:#333;}"
+            '.cls-1{fill:none;}.cls-2{fill:#750787;}.cls-3{fill:#004dff;}.cls-4{fill:#008026;}.cls-5{fill:#ffed00;}.cls-6{fill:#ff8c00;}.cls-7{fill:#e40303;}.cls-8{fill:url(#Rainbow);}.cls-9{fill:#333;}'
           }
         </style>
         <pattern
@@ -27,7 +27,7 @@ function SouthclawsExtraRainbowTrans(props) {
           <rect className="cls-7" width={495.73} height={51.04} />
         </pattern>
       </defs>
-      <title>{"southclaws-extra-rainbow-trans"}</title>
+      <title>{'southclaws-extra-rainbow-trans'}</title>
       <g id="extra-rainbow-trans">
         <path
           id="inner"

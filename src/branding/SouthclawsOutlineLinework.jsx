@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function SouthclawsOutlineLinework(props) {
   return (
@@ -6,11 +6,11 @@ function SouthclawsOutlineLinework(props) {
       <defs>
         <style>
           {
-            ".cls-1{fill:none;stroke:#333;stroke-miterlimit:10;stroke-width:4px;}"
+            '.cls-1{fill:none;stroke:#333;stroke-miterlimit:10;stroke-width:4px;}'
           }
         </style>
       </defs>
-      <title>{"southclaws-outline-linework"}</title>
+      <title>{'southclaws-outline-linework'}</title>
       <g id="outline-linework">
         <path
           id="outer"

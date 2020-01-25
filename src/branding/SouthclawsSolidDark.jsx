@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react';
 
 function SouthclawsSolidDark(props) {
   return (
     <svg viewBox="0 0 500 500" width="1em" height="1em" {...props}>
       <defs>
         <style>
-          {".cls-1{fill:#333;}.cls-2{fill:#dae1e5;}.cls-3{fill:#ff3200;}"}
+          {'.cls-1{fill:#333;}.cls-2{fill:#dae1e5;}.cls-3{fill:#ff3200;}'}
         </style>
       </defs>
-      <title>{"southclaws-solid-dark"}</title>
+      <title>{'southclaws-solid-dark'}</title>
       <g id="solid-dark">
         <rect id="bg" className="cls-1" width={500} height={500} />
         <path

@@ -7,7 +7,6 @@ export default (props) => (
     focusable="false"
     data-icon="behance"
     role="img"
-    xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 512 512"
     {...props}
   >

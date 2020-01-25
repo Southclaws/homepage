@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Github from '../src/icons/Github';
-import Mail from '../src/icons/Mail';
-import Instagram from '../src/icons/Instagram';
-import Twitter from '../src/icons/Twitter';
-import Vimeo from '../src/icons/Vimeo';
-import Behance from '../src/icons/Behance';
+import Github from './icons/Github';
+import Mail from './icons/Mail';
+import Instagram from './icons/Instagram';
+import Twitter from './icons/Twitter';
+import Vimeo from './icons/Vimeo';
+import Behance from './icons/Behance';
 
 export const Socials = () => (
   <span>
@@ -64,8 +64,14 @@ export const Links = () => (
 );
 
 export const IconLink = ({ label, url, children }) => (
-  <label title={label} tabIndex={0}>
-    <a href={url} rel="noopener" target="_blank" aria-label={label}>
+  <>
+    <a
+      href={url}
+      rel="noopener noreferrer"
+      target="_blank"
+      label={label}
+      tabIndex={0}
+    >
       {children}
     </a>
 
@@ -79,5 +85,5 @@ export const IconLink = ({ label, url, children }) => (
         opacity: 1;
       }
     `}</style>
-  </label>
+  </>
 );
