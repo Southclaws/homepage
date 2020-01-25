@@ -4,7 +4,7 @@ import { DefaultSeo } from 'next-seo';
 import { MDXProvider } from '@mdx-js/react';
 
 import { Socials } from '../src/Links';
-import { Bold } from '../src/icons/Southclaws';
+import { SouthclawsExtraRainbowTrans } from '../src/branding';
 
 const YEAR = new Date().getFullYear();
 const SEO = {
@@ -55,7 +55,7 @@ const Header = () => (
     </picture>
 
     <br />
-    <Bold width={64} height={64} tabIndex={0} />
+    <SouthclawsExtraRainbowTrans width={64} height={64} tabIndex={0} />
     <br />
     <Socials />
 
