@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 import { DefaultSeo } from 'next-seo';
 import { MDXProvider } from '@mdx-js/react';
 
@@ -55,7 +56,11 @@ const Header = () => (
     </picture>
 
     <br />
-    <SouthclawsExtraRainbowTrans width={64} height={64} tabIndex={0} />
+    <Link href="/">
+      <a>
+        <SouthclawsExtraRainbowTrans width={64} height={64} tabIndex={0} />
+      </a>
+    </Link>
     <br />
     <Socials />
 

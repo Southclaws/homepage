@@ -5,12 +5,17 @@ const withPlugins = require('next-compose-plugins');
 const withMDX = require('@next/mdx')();
 const withImages = require('next-images');
 
+const fs = require('fs');
+const filter = require('lodash/fp/filter');
+const flow = require('lodash/fp/flow');
+const flatten = require('lodash/fp/flatten');
+const map = require('lodash/fp/map');
+const partition = require('lodash/fp/partition');
 const { Linter } = require('eslint');
 const prettier = require('prettier');
 const babelEsLint = require('babel-eslint');
 const svgr = require('@svgr/core').default;
 const { pascalCase } = require('change-case');
-const fs = require('fs');
 
 const { eslintConfig } = require('./package.json');
 
@@ -66,6 +71,33 @@ export {
   )
 );
 
+const fullPath = (path) => (v) => `${path}/${v.name}`;
+const stripLeadingPath = (initial) => (v) =>
+  v.substr(initial.length + 1, v.length);
+const stripExtension = (v) => v.substr(0, v.length - 4);
+const ignoreNextFiles = (path) =>
+  !path.startsWith('_') && !path.startsWith('index');
+const getPages = (initialPath) => {
+  const recurse = (path) => {
+    const [dirs, files] = partition((ent) => ent.isDirectory())(
+      fs.readdirSync(path, { withFileTypes: true })
+    );
+    return [
+      ...flow(
+        map(fullPath(path)),
+        map(stripLeadingPath(initialPath)),
+        map(stripExtension),
+        filter(ignoreNextFiles)
+      )(files),
+      ...flow(map(fullPath(path)), map(recurse), flatten)(dirs)
+    ];
+  };
+  return recurse(initialPath);
+};
+
 module.exports = withPlugins([withMDX, withImages], {
-  pageExtensions: ['js', 'jsx', 'md', 'mdx']
+  pageExtensions: ['js', 'jsx', 'md', 'mdx'],
+  env: {
+    ALL_PAGES: getPages('./pages')
+  }
 });
