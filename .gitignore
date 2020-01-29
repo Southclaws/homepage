@@ -21,3 +21,6 @@ faviconData.json
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# next.config.js imported ES6 stuff
+config/
