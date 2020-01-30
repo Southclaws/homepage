@@ -7,23 +7,27 @@ import { Linter } from 'eslint';
 import prettier from 'prettier';
 import readPkgUp from 'read-pkg-up';
 
-const {
-  packageJson: { eslintConfig }
-} = readPkgUp.sync();
+const getLintConfig = () => {
+  const pkg = readPkgUp.sync();
+  if (pkg === undefined) {
+    throw new Error('Could not find package.json');
+  }
+  return pkg.packageJson['eslintConfig'];
+};
 
 const linter = new Linter();
 linter.defineParser('babel-eslint', babelEsLint);
 
 // formats and fixes generated code according to prettier+eslint.
-const format = (data) =>
-  prettier.format(linter.verifyAndFix(data, eslintConfig).output, {
+const format = (data: string) =>
+  prettier.format(linter.verifyAndFix(data, getLintConfig()).output, {
     ...prettier.resolveConfig.sync('./package.json'),
     parser: 'babel'
   });
 
 // Reads the SVG files from Adobe Illustrator and converts them all to React
 // components in the src directory!
-const brandComponents = (staticDir, outputDir) =>
+const brandComponents = (staticDir: string, outputDir: string) =>
   fs
     .readdirSync(staticDir)
     .filter((v) => v.endsWith('.svg'))
@@ -34,13 +38,13 @@ const brandComponents = (staticDir, outputDir) =>
       const outputPath = `${outputDir}/${componentName}.jsx`;
       const code = fs.readFileSync(inputPath);
       console.log('Generating SVG asset', componentName, '...');
-      svgr(code, { icon: true }, { componentName }).then((jsx) => {
+      svgr(code, { icon: true }, { componentName }).then((jsx: string) => {
         fs.writeFileSync(outputPath, format(jsx));
       });
       return componentName;
     });
 
-export default (staticDir, outputDir) => {
+export default (staticDir: string, outputDir: string) => {
   console.log('Generating index.js exports for brand SVGs...');
 
   const components = brandComponents(staticDir, outputDir);
