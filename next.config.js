@@ -1,6 +1,3 @@
-/* eslint-disable no-console */
-/* eslint-disable import/no-extraneous-dependencies */
-
 const withPlugins = require('next-compose-plugins');
 const withMDX = require('@next/mdx')();
 const withImages = require('next-images');
