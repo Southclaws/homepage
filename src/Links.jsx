@@ -12,10 +12,16 @@ export const Socials = () => (
     <IconLink url="mailto:south@cla.ws" label="Send mail to Barnaby">
       <Mail width="2em" height="1em" />
     </IconLink>
-    <IconLink label="Barnaby's Instagram profile" url="http://j.mp/SCINSTA">
+    <IconLink
+      label="Barnaby's Instagram profile"
+      url="https://www.instagram.com/Southclaws/"
+    >
       <Instagram width="2em" height="1em" />
     </IconLink>
-    <IconLink label="Barnaby's Twitter profile" url="http://bit.ly/SCTWITTER">
+    <IconLink
+      label="Barnaby's Twitter profile"
+      url="https://twitter.com/Southclaws"
+    >
       <Twitter width="2em" height="1em" />
     </IconLink>
 
