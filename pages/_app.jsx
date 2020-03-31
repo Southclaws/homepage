@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import { DefaultSeo } from 'next-seo';
+import { DefaultSeo, LogoJsonLd, SocialProfileJsonLd } from 'next-seo';
 import { MDXProvider } from '@mdx-js/react';
 
 import { Socials } from '../src/Links';
@@ -103,6 +103,23 @@ const Footer = () => (
 export default ({ Component, pageProps }) => (
   <>
     <DefaultSeo {...SEO} />
+
+    <LogoJsonLd
+      logo="https://www.southcla.ws/static/southclaws-bold-light-0500.png"
+      url="https://www.southcla.ws"
+    />
+
+    <SocialProfileJsonLd
+      type="Person"
+      name="Barnaby Keene"
+      url="http://www.southcla.ws"
+      sameAs={[
+        'https://www.instagram.com/Southclaws',
+        'https://twitter.com/Southclaws',
+        'https://www.linkedin.com/in/Southclaws/',
+        'https://www.facebook.com/Southclaws',
+      ]}
+    />
 
     <Head>
       <meta charSet="utf-8" />
