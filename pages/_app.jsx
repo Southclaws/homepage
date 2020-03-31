@@ -21,28 +21,28 @@ const SEO = {
     profile: {
       firstName: 'Barnaby',
       lastName: 'Keene',
-      username: 'Southclaws'
+      username: 'Southclaws',
     },
     images: [
       {
         url: '/static/southclaws-bold-light-0500.png',
         width: 500,
         height: 500,
-        alt: 'Southclaws Logo (Light)'
+        alt: 'Southclaws Logo (Light)',
       },
       {
         url: '/static/2019.webp',
         width: 100,
         height: 100,
-        alt: 'Photograph of Barnaby "Southclaws" Keene (2019)'
-      }
-    ]
+        alt: 'Photograph of Barnaby "Southclaws" Keene (2019)',
+      },
+    ],
   },
   twitter: {
     handle: '@Southclaws',
     site: '@Southclaws',
-    cardType: 'summary_large_image'
-  }
+    cardType: 'summary_large_image',
+  },
 };
 
 const Header = () => (

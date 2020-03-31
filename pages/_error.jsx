@@ -23,7 +23,7 @@ const Error = ({ code }) => (
 
 // eslint-disable-next-line fp/no-mutation
 Error.getInitialProps = ({ res, err }) => ({
-  code: res?.statusCode || err?.statusCode || 404
+  code: res?.statusCode || err?.statusCode || 404,
 });
 
 export default Error;
