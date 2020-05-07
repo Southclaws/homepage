@@ -105,7 +105,7 @@ export default ({ Component, pageProps }) => (
     <DefaultSeo {...SEO} />
 
     <LogoJsonLd
-      logo="https://www.southcla.ws/static/southclaws-bold-light-0500.png"
+      logo="https://www.southcla.ws/static/2019.jpg"
       url="https://www.southcla.ws"
     />
 
