@@ -25,16 +25,16 @@ const SEO = {
     },
     images: [
       {
-        url: '/static/southclaws-bold-light-0500.png',
-        width: 500,
-        height: 500,
-        alt: 'Southclaws Logo (Light)',
-      },
-      {
-        url: '/static/2019.webp',
+        url: 'https://www.southcla.ws/static/2019.webp',
         width: 100,
         height: 100,
         alt: 'Photograph of Barnaby "Southclaws" Keene (2019)',
+      },
+      {
+        url: 'https://www.southcla.ws/static/southclaws-bold-light-0500.png',
+        width: 500,
+        height: 500,
+        alt: 'Southclaws Logo (Light)',
       },
     ],
   },
@@ -131,37 +131,52 @@ export default ({ Component, pageProps }) => (
       <meta name="msapplication-TileColor" content="#ff3200" />
       <meta
         name="msapplication-TileImage"
-        content="/static/mstile-144x144.png"
+        content="https://www.southcla.ws/static/mstile-144x144.png"
       />
-      <meta name="msapplication-config" content="/static/browserconfig.xml" />
+      <meta
+        name="msapplication-config"
+        content="https://www.southcla.ws/static/browserconfig.xml"
+      />
       <meta name="theme-color" content="#ff3200" />
 
-      <link rel="manifest" href="/static/manifest.json" />
-      <link rel="shortcut icon" href="/static/favicon.ico" />
+      <link
+        rel="manifest"
+        href="https://www.southcla.ws/static/manifest.json"
+      />
+      <link
+        rel="shortcut icon"
+        href="https://www.southcla.ws/static/favicon.ico"
+      />
       <link
         rel="apple-touch-icon"
         sizes="180x180"
-        href="/static/apple-touch-icon.png"
+        href="https://www.southcla.ws/static/apple-touch-icon.png"
       />
       <link
         rel="icon"
         type="image/png"
         sizes="32x32"
-        href="/static/favicon-32x32.png"
+        href="https://www.southcla.ws/static/favicon-32x32.png"
       />
       <link
         rel="icon"
         type="image/png"
         sizes="16x16"
-        href="/static/favicon-16x16.png"
+        href="https://www.southcla.ws/static/favicon-16x16.png"
       />
-      <link rel="manifest" href="/static/site.webmanifest" />
+      <link
+        rel="manifest"
+        href="https://www.southcla.ws/static/site.webmanifest"
+      />
       <link
         rel="mask-icon"
-        href="/static/safari-pinned-tab.svg"
+        href="https://www.southcla.ws/static/safari-pinned-tab.svg"
         color="#5bbad5"
       />
-      <link rel="shortcut icon" href="/static/favicon.ico" />
+      <link
+        rel="shortcut icon"
+        href="https://www.southcla.ws/static/favicon.ico"
+      />
 
       <link rel="stylesheet" href="https://use.typekit.net/vnc0psu.css" />
     </Head>
