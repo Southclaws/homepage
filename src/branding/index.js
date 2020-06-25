@@ -46,5 +46,5 @@ export {
   SouthclawsSolidDark,
   SouthclawsSolidLight,
   SouthclawsSolidLineworkLight,
-  SouthclawsSolidLinework
+  SouthclawsSolidLinework,
 };
