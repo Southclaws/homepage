@@ -2,7 +2,13 @@ import * as React from 'react';
 
 function SouthclawsOutlineDark(props) {
   return (
-    <svg viewBox="0 0 500 500" width="1em" height="1em" {...props}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 500 500"
+      width="1em"
+      height="1em"
+      {...props}
+    >
       <defs>
         <style>
           {

@@ -4,6 +4,7 @@ function SouthclawsBoldColoured(props) {
   return (
     <svg
       id="bold-coloured"
+      xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 500 500"
       width="1em"
       height="1em"
