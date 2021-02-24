@@ -1,18 +1,24 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import { DefaultSeo, LogoJsonLd, SocialProfileJsonLd } from 'next-seo';
+import type { AppProps /*, AppContext */ } from 'next/app';
+import {
+  DefaultSeo,
+  DefaultSeoProps,
+  LogoJsonLd,
+  SocialProfileJsonLd,
+} from 'next-seo';
 import { MDXProvider } from '@mdx-js/react';
 
-import { Socials } from '../src/Links';
-import { SouthclawsExtraRainbowTrans } from '../src/branding';
+import { Socials } from '../Links';
+import { SouthclawsExtraRainbowTrans } from '../branding';
 
 const YEAR = new Date().getFullYear();
-const SEO = {
+const SEO: DefaultSeoProps = {
   title: 'Homepage, Work and Social Links',
   titleTemplate: '%s | Southclaws',
   description:
-    'Homepage, work and social links for Southclaws, aka Barnaby Keene.',
+    'Homepage, work and social links for Barnaby "Southclaws" Keene.',
   canonical: 'https://www.southcla.ws',
   openGraph: {
     type: 'website',
@@ -100,7 +106,7 @@ const Footer = () => (
   </footer>
 );
 
-export default ({ Component, pageProps }) => (
+const App = ({ Component, pageProps }: AppProps) => (
   <>
     <DefaultSeo {...SEO} />
 
@@ -237,3 +243,5 @@ export default ({ Component, pageProps }) => (
     `}</style>
   </>
 );
+
+export default App;
