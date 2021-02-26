@@ -10,6 +10,8 @@ import {
 } from 'next-seo';
 import { MDXProvider } from '@mdx-js/react';
 
+import 'tachyons';
+
 import { Socials } from '../Links';
 import { SouthclawsExtraRainbowTrans } from '../branding';
 
@@ -185,6 +187,7 @@ const App = ({ Component, pageProps }: AppProps) => (
       />
 
       <link rel="stylesheet" href="https://use.typekit.net/vnc0psu.css" />
+      <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     </Head>
 
     <Header />
@@ -215,9 +218,9 @@ const App = ({ Component, pageProps }: AppProps) => (
 
         // Root scaling factor
         font-size: 12pt;
-        max-width: 32em;
+        max-width: 42em;
 
-        font-family: Rooney, serif;
+        font-family: Inter, sans-serif;
         background-color: #dae1e5;
       }
       main {
