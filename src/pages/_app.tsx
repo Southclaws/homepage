@@ -10,6 +10,7 @@ import {
 } from 'next-seo';
 import { MDXProvider } from '@mdx-js/react';
 
+import 'normalize.css';
 import 'tachyons';
 
 import { Socials } from '../Links';
@@ -103,6 +104,7 @@ const Footer = () => (
         font-size: smaller;
         text-align: center;
         color: hsl(0, 0%, 20%);
+        margin: 0.5em;
       }
     `}</style>
   </footer>
@@ -190,26 +192,34 @@ const App = ({ Component, pageProps }: AppProps) => (
       <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     </Head>
 
-    <Header />
-    <hr />
+    <div id="container">
+      <Header />
+      <hr />
 
-    <main>
-      <MDXProvider>
-        <Component {...pageProps} />
-      </MDXProvider>
-    </main>
+      <main>
+        <MDXProvider components={{ a: (props) => <Link {...props} /> }}>
+          <Component {...pageProps} />
+        </MDXProvider>
+      </main>
+    </div>
 
-    <hr />
     <Footer />
 
     <style jsx global>{`
       html,
+      body,
       #__next {
-        // CSS reset.
-        margin: 0 0 0 0;
-        padding: 0 0 0 0;
+        height: 100%;
+        background-color: #dae1e5;
       }
-      body {
+      #__next {
+        display: flex;
+        flex-direction: column;
+        font-family: Inter, sans-serif;
+      }
+      #container {
+        flex: 1 0 auto;
+
         // Keeps the body centered, regardless of size.
         margin: 0 auto 0 auto;
 
@@ -219,10 +229,8 @@ const App = ({ Component, pageProps }: AppProps) => (
         // Root scaling factor
         font-size: 12pt;
         max-width: 42em;
-
-        font-family: Inter, sans-serif;
-        background-color: #dae1e5;
       }
+
       main {
         margin: 0em 2em 0em 2em;
       }
