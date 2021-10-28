@@ -28,10 +28,26 @@ const Experience = () => (
     <h2>Experience</h2>
 
     <ExperienceItem
-      title="Senior Software Engineer"
+      title="Software Engineer"
+      company="Metomic"
+      location="London/Remote"
+      dates="Apr 2021 - Present"
+      skills="TypeScript, React.js, AWS, Terraform, GitHub CI/CD"
+    >
+      <ul>
+        <li>
+          As one of the first members of the engineering team, I helped put in
+          place practices for code quality, documentation and continuous
+          integration.
+        </li>
+      </ul>
+    </ExperienceItem>
+
+    <ExperienceItem
+      title="Software Engineer"
       company="Ytterate"
       location="Remote"
-      dates="2019-2020"
+      dates="Nov 2019 - Aug 2020"
       skills="TypeScript, React.js, Redux, Traefik, Docker"
     >
       <ul>
@@ -50,7 +66,7 @@ const Experience = () => (
       title="Go Engineer"
       company="Utility Warehouse"
       location="London"
-      dates="2018-2019"
+      dates="Jun 2018 - Nov 2019"
       skills="Golang, CockroachDB, Kubernetes, Graylog, Kafka, NATS, Docker"
     >
       <ul>
@@ -66,18 +82,21 @@ const Experience = () => (
     </ExperienceItem>
 
     <ExperienceItem
-      title="Software Engineer"
+      title="Software Engineer (Uni Placement)"
       company="Spotlight Data"
       location="Nottingham"
       dates="2016-2017"
       skills="Golang, Docker, Kubernetes, Python, spaCy, Pachyderm"
     >
       <ul>
-        <li>Started as a Python programmer to build data extraction tools</li>
         <li>
-          Moved to building critical infrastructure in 2017 and learnt Golang to
-          build a large data analysis pipeline to concurrently analyse millions
-          of documents.
+          University placement as Python programmer to build data extraction
+          tools
+        </li>
+        <li>
+          Moved to building critical infrastructure and learnt Golang to build a
+          large data analysis pipeline to concurrently analyse millions of
+          documents.
         </li>
       </ul>
     </ExperienceItem>
