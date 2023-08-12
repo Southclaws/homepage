@@ -66,9 +66,7 @@ const Header = () => (
 
     <br />
     <Link href="/">
-      <a>
-        <SouthclawsExtraRainbowTrans width={64} height={64} tabIndex={0} />
-      </a>
+      <SouthclawsExtraRainbowTrans width={64} height={64} tabIndex={0} />
     </Link>
     <br />
     <Socials />

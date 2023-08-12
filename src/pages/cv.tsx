@@ -24,14 +24,42 @@ const ExperienceItem = ({
 );
 
 const Experience = () => (
-  <>
+  <section>
     <h2>Experience</h2>
 
     <ExperienceItem
-      title="Software Engineer"
+      title="Senior Engineer -> Senior Product Engineer"
+      company="Odin"
+      location="London"
+      dates="Nov 2021 - Present"
+      skills="Full stack development, critical infrastructure, devops processes, hiring, leadership, user research and product work"
+    >
+      <ul>
+        <li>
+          As the first senior engineering hire, I built out the platform from
+          scratch, ready to scale for the next decade. This involved Golang and
+          Next.js for the application itself, as well as Terraform, Fly.io,
+          Vercel, AWS, Cloudflare, Google Cloud and many more tools to get us
+          from zero to one with a high quality tested codebase.
+        </li>
+        <li>
+          Over the course of the last year, I worked closely with the founders
+          to build out a world class team which will take the company from one
+          to infinity.
+        </li>
+        <li>
+          Transitioned to a product focused role where I sit between
+          engineering, design and the future moonshots on the community & social
+          side of the business.
+        </li>
+      </ul>
+    </ExperienceItem>
+
+    <ExperienceItem
+      title="Senior Software Engineer"
       company="Metomic"
       location="London/Remote"
-      dates="Apr 2021 - Present"
+      dates="Apr 2021 - Nov 2021"
       skills="TypeScript, React.js, AWS, Terraform, GitHub CI/CD"
     >
       <ul>
@@ -100,11 +128,11 @@ const Experience = () => (
         </li>
       </ul>
     </ExperienceItem>
-  </>
+  </section>
 );
 
 const Personal = () => (
-  <>
+  <section>
     <h2>Personal</h2>
     <p>
       Worked on a multiplayer game during college that gained 20k unique users.
@@ -116,18 +144,18 @@ const Personal = () => (
       My free time is usually filled with photography, videography, travelling
       and music.
     </p>
-  </>
+  </section>
 );
 
 const Education = () => (
-  <>
+  <section>
     <h2>Education</h2>
     <ExperienceItem
       title="Computer Science BSc"
       company="Nottingham Trent"
       dates="2014-2018"
     ></ExperienceItem>
-  </>
+  </section>
 );
 
 const Link = ({ icon, text }) => (
@@ -139,7 +167,7 @@ const Link = ({ icon, text }) => (
 
 const Page = () => (
   <>
-    <section>
+    <article>
       <aside className="mv4">
         <span className="bg-black white br2 ph1 lh-copy">Note:</span>{' '}
         <a href="javascript:window.print()">Print this page</a> for a
@@ -171,7 +199,7 @@ const Page = () => (
       <Experience />
       <Personal />
       <Education />
-    </section>
+    </article>
 
     {/* Styles that override globals but just for @media print. This lets me
         hide the normal site layout stuff and reset all the margins to fit paper
@@ -196,15 +224,22 @@ const Page = () => (
         aside {
           display: none;
         }
+        section {
+          break-inside: avoid;
+          break-after: auto;
+          position: relative;
+        }
       }
     `}</style>
 
     {/* Style for the content, scoped only to the page component itself. All
         the rest of the styles are done via Tachyons because it's easier. */}
     <style jsx>{`
-      section {
+      article {
         font-family: inter;
+        position: relative;
       }
+
       h1 {
         text-decoration: underline;
         text-decoration-color: rgba(0, 0, 0, 0.8);
