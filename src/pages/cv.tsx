@@ -135,14 +135,17 @@ const Personal = () => (
   <section>
     <h2>Personal</h2>
     <p>
-      Worked on a multiplayer game during college that gained 20k unique users.
-      Built a package management tool. Built game server indexing services.
-      Maintain an open source tool for managing automated infrastructure.
-      Designed various album covers, tour posters, small business logos.
+      A few side projects I've worked on are: Storyden: a forum software for the
+      modern age built with Go and React. Pico: a git-driven task runner used
+      for managing containers using infrastructure-as-code. Wisplight: a
+      privacy-friendly browser history personal search engine. I've also
+      co-founded (and failed) a couple of startups.
     </p>
     <p>
-      My free time is usually filled with photography, videography, travelling
-      and music.
+      Outside of engineering work I've worked as a freelance brand designer for
+      indie businesses and startups, as well as videographer for live events. My
+      free time is usually filled with photography, videography, travelling and
+      music.
     </p>
   </section>
 );
